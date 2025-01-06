@@ -14,12 +14,12 @@ const Navbar = () => {
     <div className="h-24 flex items-center justify-between">
       {/* LEFT */}
       <div className="md:hidden lg:block w-[-20%]">
-        <a
+        <Link
           href="/"
           className="font-bold text-xl text-blue-500 hover:text-blue-700"
         >
           VINSA
-        </a>
+        </Link>
       </div>
       {/* CENTER */}
       <div className="hidden md:flex w[50%] text-sm items-center justify-between">
