@@ -41,7 +41,7 @@ const Navbar = () => {
               alt="Friends"
               width={20}
               height={16}
-              className="w-8 h-4"
+              className="w-6 h-6"
             />
             <span>Friends</span>
           </Link>
