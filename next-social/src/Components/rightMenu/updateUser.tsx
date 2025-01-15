@@ -1,3 +1,4 @@
+"use client"
 const UpdateUser = () => {
   return (
     <div className=''>UpdateUser</div>

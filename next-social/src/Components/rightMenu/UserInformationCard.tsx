@@ -6,12 +6,7 @@ import Link from "next/link"
 import UserInfoCardInteraction from "./UserInfoCardInteraction"
 import UpdateUser from "./updateUser"
 
-// Define a type for the props
-interface UserInfoCardProps {
-  user: User
-}
-
-const UserInfoCard = async ({ user }: UserInfoCardProps) => {
+const UserInfoCard = async ({ user }: { user: User }) => {
   const createdAtDate = new Date(user.createdAt)
 
   const formattedDate = createdAtDate.toLocaleDateString("en-US", {
@@ -119,6 +114,7 @@ const UserInfoCard = async ({ user }: UserInfoCardProps) => {
         {currentUserId && currentUserId !== user.id && (
           <UserInfoCardInteraction
             userId={user.id}
+            currentUserId={currentUserId} 
             isUserBlocked={isUserBlocked}
             isFollowing={isFollowing}
             isFollowingSent={isFollowingSent}

@@ -1,10 +1,9 @@
-
 import RightMenu from "@/Components/rightMenu/RightMenu"
 import Image from "next/image"
 import prisma from "@/lib/client"
 import { notFound } from "next/navigation"
 import { auth } from "@clerk/nextjs/server"
-import { use } from "react"
+
 import LeftMenu from "@/Components/leftMenu/LeftMenu"
 import Feed from "@/Components/feed/Feed"
 
